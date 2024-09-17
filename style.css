@@ -93,14 +93,13 @@ div{
 
 .post{
     height: 41rem;
-    width: 50rem;
+    width: 29%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-radius: 3px;
-    background-color: #73b4aa;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -131,4 +130,7 @@ div{
 }
 .card-title{
     font-size: 30px;
+}
+#NiagaraFalls{
+    background-image: linear-gradient(#73b4aa, #73b4aa00,#73b4aa00, #73b4aa ),  url(image/image1.png);
 }
