@@ -34,7 +34,7 @@ a{
     margin-top: -10px;
     margin-bottom: 10px;
 }
-.smaller{
+.name{
     font-size: 28px;
     color:#536c41;
     margin: 1rem;
@@ -78,10 +78,6 @@ div{
     margin: auto;
 }
 
-.div{
-    width: 40rem;
-    height: 7rem;
-}
 
 .container{
     height: 120rem;
@@ -93,7 +89,7 @@ div{
 
 }
 
-.post{
+.card{
     height: 30rem auto;
     width: 29%;
     background-color: white;
@@ -107,6 +103,11 @@ div{
     box-shadow: 7px 7px 7px #416861e0;
 }
 
+.footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #73b4aa;
+}
 
 
 
@@ -127,30 +128,48 @@ div{
 }
 #NiagaraFalls{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image1.png);
-    align-items: center;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 
 }
 #Mexico{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image2.png);
+    background-position: center;
+    background-size: cover;
 }
 #DominicanRepublic{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image3.png);
-    position: relative;
+    background-position: center;
+    background-size: cover;
 }
 #Egypt{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image4.png);
+    background-position: center;
+    background-size: cover;
 }
+
+
+
+
+
+@media screen and (max-width: 1321px){
+    .container {
+        height: 90rem;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px){
     .container {
-        height: 110rem;
+        height: 90rem;
     }
     .card-title{
         font-size: 25px;
     }
 }
-@media screen and (max-width: 1000px){
-    .post{
+@media screen and (max-width: 1050px){
+    .card{
         width: 45%;
         margin-left: 1rem auto;
         margin-right: 1rem auto;
@@ -159,16 +178,18 @@ div{
         height: 140rem;
     }
 }
-@media screen and (max-width: 570px) {
-    .post {
+@media screen and (max-width: 640px) {
+    .card {
         width:65%;
     }
     .container{
-        height: 180rem;
+        height: 200rem;
     }
 }
 @media screen and (max-width:445px){
-    font-size: ;of header
+    h1{
+        font-size: 30px;
+    }
 }
 
 
