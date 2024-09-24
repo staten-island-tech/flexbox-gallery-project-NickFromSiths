@@ -25,10 +25,15 @@ button{
     height: 18px;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 1px 1px 7px #536c41;
 }
 button:hover{
     font-style: italic;
-    transform: scale(1.1);
+    transform: scale(1.15);
+    transition: .1s;
+}
+button:active{
+    background-color: #be8926;
 }
 a{
     margin-top: -10px;
@@ -38,6 +43,7 @@ a{
     font-size: 28px;
     color:#536c41;
     margin: 1rem;
+    text-decoration: underline;
 }
 
 .title1{
@@ -46,16 +52,17 @@ a{
     padding-bottom: 10px;
 
 }
-
+h1, h2{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
 h1{
     color:#536c41;
     font-size: 40px;
     text-align: center;
  /*    transform: translate(0,-5rem); */
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
 
 }
 h2{
@@ -63,10 +70,6 @@ h2{
     text-align: center;
     color: #536c41;
 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
 }
 p{
     text-align: center;
@@ -88,7 +91,9 @@ div{
     justify-content: space-between;
 
 }
-
+div.card:hover{
+    translate: 1px -3px;
+}
 .card{
     height: 30rem auto;
     width: 29%;
@@ -103,6 +108,7 @@ div{
     box-shadow: 7px 7px 7px #416861e0;
     background-position: center;
     background-size: cover;
+    transition:all 0.3s;
 }
 
 .footer{
@@ -110,24 +116,29 @@ div{
     height: 7rem;
     background-color: #73b4aa;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .card-title{
     font-size: 30px;
 }
+.animation{
+    animation: fadein 2.5s;
+}
+
+@keyframes fadein{
+    0% {
+        transform: translateY(110%) ;
+        opacity: 0.17;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+
 #NiagaraFalls{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image1.png);
 
@@ -168,9 +179,6 @@ div{
 
 
 @media screen and (max-width: 1200px){
-    .container {
-        height: 90rem;
-    }
     .card-title{
         font-size: 25px;
     }
