@@ -26,11 +26,11 @@ button{
     text-decoration: none;
     cursor: pointer;
     box-shadow: 1px 1px 7px #536c41;
+    transition: all .1s;
 }
 button:hover{
     font-style: italic;
     transform: scale(1.15);
-    transition: .1s;
 }
 button:active{
     background-color: #be8926;
@@ -44,8 +44,11 @@ a{
     color:#536c41;
     margin: 1rem;
     text-decoration: underline;
+    transition: all 2s;
 }
-
+h2.name:hover{
+    transform: scale(1.75);
+}
 .title1{
     background-color: #73b4aa;
     padding-top: 10px;
@@ -96,7 +99,7 @@ div.card:hover{
 }
 .card{
     height: 30rem auto;
-    width: 29%;
+    width: 23%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -125,7 +128,7 @@ div.card:hover{
 
 @keyframes fadein{
     0% {
-        transform: translateY(110%) ;
+        transform: translateY(90%) ;
         opacity: 0.17;
     }
     50%{
@@ -135,13 +138,37 @@ div.card:hover{
         transform: translateY(0%);
     }
 }
+h1.cursor{
+    transition: all 1s;
+}
+h1.cursor:hover{
+    transform: scale(1.2);
+}
+h2.cursor{
+    transition: all 1s;
+}
+h2.cursor:hover{
+    animation: madeby 1s;
+}
+@keyframes madeby {
+    
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0%;
+        transform: scale(0.7) rotate(-53deg);
+    }
+    75% {
+        transform: scale(100) rotate(87deg);
+        opacity: 0.00;
+    }
 
-
+}
 
 
 #NiagaraFalls{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image1.png);
-
 }
 #Mexico{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image2.png);
@@ -166,6 +193,12 @@ div.card:hover{
 }
 #Tokyo{
     background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image9.png);
+}
+#Tokyo{
+    background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image9.png);
+}
+#Placeholder{
+    background-image: linear-gradient(#73b4aa, #73b4aa25,#73b4aa25, #73b4aa ),  url(image/image.png);
 }
 
 
