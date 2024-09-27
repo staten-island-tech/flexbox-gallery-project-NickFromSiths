@@ -3,15 +3,14 @@ html, body, *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
+}
+/* NEEDED IN EVERY PROJECT */
+html, body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
-/* NEEDED IN EVERY PROJECT */
-
 
 body{
     background-color: #f9f9e2;
@@ -99,7 +98,6 @@ div.card:hover{
     translate: 1px -3px;
 }
 .card{
-    height: 30rem auto;
     width: 23%;
     background-color: white;
     display: flex;
@@ -113,6 +111,7 @@ div.card:hover{
     background-position: center;
     background-size: cover;
     transition:all 0.3s;
+    animation: fadein 2.5s;
 }
 
 .footer{
@@ -123,13 +122,10 @@ div.card:hover{
 .card-title{
     font-size: 30px;
 }
-.animation{
-    animation: fadein 2.5s;
-}
 
 @keyframes fadein{
     0% {
-        transform: translateY(90%) ;
+        transform: translateY(490%) ;
         opacity: 0.17;
     }
     50%{
@@ -214,8 +210,7 @@ h2.cursor:hover{
 
 @media screen and (max-width: 1200px){
     .card-title{
-        font-size: 25px;
-        transition: all .1s;
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 1050px){
@@ -223,27 +218,26 @@ h2.cursor:hover{
         width: 45%;
         margin-left: 1rem auto;
         margin-right: 1rem auto;
-        transition: all .1s;
+
     }
     .container {
         height: 140rem;
-        transition: all .1s;
     }
 }
 @media screen and (max-width: 640px) {
     .card {
         width:65%;
-        transition: all .1s;
+
     }
     .container{
         height: 200rem;
-        transition: all .1s;
+
     }
 }
 @media screen and (max-width:445px){
     h1{
-        font-size: 30px;
-        transition: all .1s;
+        font-size: 13px;
+
     }
 }
 
