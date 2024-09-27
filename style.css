@@ -215,6 +215,7 @@ h2.cursor:hover{
 @media screen and (max-width: 1200px){
     .card-title{
         font-size: 25px;
+        transition: all .1s;
     }
 }
 @media screen and (max-width: 1050px){
@@ -222,22 +223,27 @@ h2.cursor:hover{
         width: 45%;
         margin-left: 1rem auto;
         margin-right: 1rem auto;
+        transition: all .1s;
     }
     .container {
         height: 140rem;
+        transition: all .1s;
     }
 }
 @media screen and (max-width: 640px) {
     .card {
         width:65%;
+        transition: all .1s;
     }
     .container{
         height: 200rem;
+        transition: all .1s;
     }
 }
 @media screen and (max-width:445px){
     h1{
         font-size: 30px;
+        transition: all .1s;
     }
 }
 
